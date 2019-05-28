@@ -1,9 +1,10 @@
-Templat LaTeX Tesis Informatika ITB
+Templat LaTeX Skripsi Teknik Informatika UIN Suska Riau
 ===================================
-oleh: Petra Novandi <me@petrabarus.net>
+oleh: Adryan Eka Vandra <adryanekavandra@gmail.com>
+original: Petra Novandi <me@petrabarus.net> 
 
 Dokumen ini merupakan templat LaTeX yang ditujukan untuk laporan
-tesis di program studi Teknik Informatika ITB. Templat ini penulis
+tesis di program studi Teknik Informatika UIN Suska Riau. Templat ini penulis
 gunakan dalam penulisan laporan tesis penulis dan dengan semangat
 berbagi penulis memutuskan untuk mempublikasikan templat ini agar
 dapat digunakan oleh banyak orang.
@@ -15,11 +16,19 @@ templat ini. :)
 Kebutuhan
 ---------
 
-Program telah diuji dalam sistem operasi Linux Ubuntu 14.04. Untuk melakukan instalasi
+Program telah diuji dalam sistem operasi Linux Ubuntu 14.04+. Untuk melakukan instalasi
 perangkat lunak yang dibutuhkan, eksekusi perintah berikut.
 
+Debian-based system
 ```
 sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends \
+    texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra \
+    dvipng texlive-latex-recommended \
+    texlive-bibtex-extra biber xzdec
+```
+Arch-based system
+```
+sudo pacman -Syy && sudo pacman -S \
     texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra \
     dvipng texlive-latex-recommended \
     texlive-bibtex-extra biber xzdec
@@ -52,3 +61,4 @@ Terima Kasih
 
 * Steven Lolong atas pemberian templat LaTeX yang asli.
 * Peb Ruswono Aryan atas bantuan pelengkapan struktur dokumen.
+* Petra Novandi <me@petrabarus.net> telah membagikan template IF ITB.
